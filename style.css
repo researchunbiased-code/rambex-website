@@ -135,3 +135,13 @@ footer{background:#03090f;color:#89939d;padding:35px 5%;display:flex;align-items
     transform: translateX(8px);
   }
 }
+
+
+
+/* Fine-tune the To Power list on desktop */
+@media (min-width: 1051px) {
+  .circle.power ul {
+    width: 88%;
+    margin-left: 10%;
+  }
+}

@@ -97,3 +97,41 @@ footer{background:#03090f;color:#89939d;padding:35px 5%;display:flex;align-items
     margin-top: 30px;
   }
 }
+
+
+
+
+/* Desktop alignment adjustments for About section */
+@media (min-width: 1051px) {
+
+  /* Give the green circle's content a little more breathing room */
+  .circle.power {
+    padding: 32px 34px;
+  }
+
+  .circle.power .circle-icon {
+    margin-bottom: 10px;
+  }
+
+  .circle.power .circle-subtitle {
+    margin-bottom: 14px;
+  }
+
+  .circle.power ul {
+    gap: 8px;
+  }
+
+  .circle.power li {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .circle.power li span {
+    font-size: 18px;
+  }
+
+  /* Move "Energy From" slightly to the right */
+  .circle.energy h3 {
+    transform: translateX(8px);
+  }
+}

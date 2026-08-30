@@ -1,185 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rambex Off-Grid Systems - renewable energy stored mechanically as compressed air." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rambex Off-Grid Systems — reliable renewable energy stored mechanically as compressed air.">
   <title>Rambex | Off-Grid Systems</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Rambex home">
-      <img src="assets/rambex-logo.png" alt="Rambex Off-Grid Systems">
-    </a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#microgrid">The Microgrid</a>
-      <a href="#solutions">Solutions</a>
-      <a href="#applications">Applications</a>
-      <a href="#contact">Contact</a>
-      <a class="quote" href="#contact">Get a Quote</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Rambex home">
+        <img src="assets/rambex-logo.png" alt="Rambex Off-Grid Systems">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#microgrid">The Microgrid</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#applications">Applications</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-quote" href="#contact">Get a Quote</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <!-- HERO: deliberately built as a Rambex layout, not the concept screenshot as a background -->
     <section class="hero" id="home">
-      <div class="hero-image"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">RAMBEX OFF-GRID SYSTEMS</p>
-        <h1>Reliable Energy.<br><span>Anywhere.</span></h1>
-        <p class="lead">Capture renewable energy. Store it mechanically. Use it when you need it.</p>
-        <p class="sublead">Rambex is a simple, durable off-grid energy concept using renewable power and compressed-air energy storage.</p>
-        <div class="hero-actions">
-          <a href="#microgrid" class="button primary">Discover the Microgrid <b>→</b></a>
-          <a href="#how-it-works" class="button ghost">How it Works</a>
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">RAMBEX OFF-GRID SYSTEMS</p>
+          <h1>Reliable Energy.<br><span>Anywhere.</span></h1>
+          <p class="hero-text">The Rambex Microgrid is a safe, simple and sustainable off-grid energy system powered by the sun and stored as compressed air.</p>
+          <a class="orange-button" href="#microgrid">Discover the Microgrid <span>→</span></a>
         </div>
       </div>
-      <div class="hero-note">Designed for homes, farms, islands, workshops and remote locations.</div>
     </section>
 
-    <section class="journey" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">THE RAMBEX PRINCIPLE</p>
-        <h2>From renewable energy to useful power.</h2>
-        <p>Three simple stages explain the Rambex system.</p>
-      </div>
+    <!-- THE CORE CONCEPT: same three-circle visual language as the concept -->
+    <section class="principle" id="about">
+      <div class="container">
+        <div class="flow-grid">
+          <article class="flow-card flow-energy">
+            <div class="flow-icon sun-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="10"></circle><path d="M32 5v10M32 49v10M5 32h10M49 32h10M13 13l7 7M44 44l7 7M51 13l-7 7M20 44l-7 7"></path></svg>
+            </div>
+            <h2>Energy From</h2>
+            <div class="flow-label">SUN / SEA</div>
+            <ul>
+              <li><span class="mini-sun">☼</span> Solar energy</li>
+              <li><span>≈</span> Ocean / sea environment</li>
+              <li><span>✓</span> Clean, renewable, unlimited</li>
+            </ul>
+          </article>
 
-      <div class="flow">
-        <article class="circle energy">
-          <div class="circle-icon">☀</div>
-          <h3>Energy From</h3>
-          <p class="circle-subtitle">SUN / SEA</p>
-          <ul>
-            <li><span>☀</span> Solar energy</li>
-            <li><span>≈</span> Ocean / sea environment</li>
-            <li><span>✓</span> Clean, renewable input</li>
-          </ul>
-        </article>
+          <div class="flow-arrow orange" aria-hidden="true">→</div>
 
-        <div class="arrow orange-arrow" aria-hidden="true">→</div>
+          <article class="flow-card flow-micro" id="microgrid">
+            <div class="flow-icon bolt-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M37 4 15 36h16l-4 24 22-34H33z"></path></svg>
+            </div>
+            <h2>The Microgrid</h2>
+            <div class="flow-label">SAFE • SECURE • SIMPLE</div>
+            <ul>
+              <li><span>◉</span> Stores energy as compressed air</li>
+              <li><span>◈</span> Mechanical energy conversion</li>
+              <li><span>◷</span> Intelligent control &amp; protection</li>
+            </ul>
+          </article>
 
-        <article class="circle micro" id="microgrid">
-          <div class="circle-icon">ϟ</div>
-          <h3>The Microgrid</h3>
-          <p class="circle-subtitle">SAFE • SECURE • SIMPLE</p>
-          <ul>
-            <li><span>◈</span> Converts energy mechanically</li>
-            <li><span>◉</span> Stores energy as compressed air</li>
-            <li><span>⚙</span> Controls, protects and delivers power</li>
-          </ul>
-        </article>
+          <div class="flow-arrow blue" aria-hidden="true">→</div>
 
-        <div class="arrow blue-arrow" aria-hidden="true">→</div>
-
-        <article class="circle power" id="applications">
-          <div class="circle-icon">⌂</div>
-          <h3>To Power</h3>
-          <p class="circle-subtitle">YOUR LIFE • YOUR WORK</p>
-          <ul>
-            <li><span>⌂</span> Your house</li>
-            <li><span>♧</span> Your farm</li>
-            <li><span>◈</span> Your island</li>
-            <li><span>⛵</span> Your yacht</li>
-            <li><span>⚒</span> Your workshop</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="benefits" id="solutions">
-      <div class="benefit"><div class="benefit-icon">♧</div><div><h3>100% Renewable</h3><p>Designed around clean energy from renewable sources.</p></div></div>
-      <div class="benefit"><div class="benefit-icon">✓</div><div><h3>Safe & Non-Toxic</h3><p>No chemical battery storage at the heart of the concept.</p></div></div>
-      <div class="benefit"><div class="benefit-icon">⚙</div><div><h3>Simple & Durable</h3><p>Mechanical systems designed with long-term serviceability in mind.</p></div></div>
-      <div class="benefit"><div class="benefit-icon">▣</div><div><h3>Modular & Scalable</h3><p>From compact systems to larger off-grid installations.</p></div></div>
-      <div class="benefit"><div class="benefit-icon">◎</div><div><h3>Off-Grid Freedom</h3><p>Generate and store energy wherever independence matters.</p></div></div>
-    </section>
-
-    <section class="how" id="how-it-works">
-      <div class="how-copy">
-        <p class="eyebrow">HOW IT WORKS</p>
-        <h2>Energy stored in motion and pressure.</h2>
-        <p>When renewable electricity is available, the Rambex system uses it to drive mechanical equipment and compress air for storage. When power is needed, stored energy is converted back into useful mechanical and electrical power.</p>
-        <p class="disclaimer">System architecture and final specifications can be adapted for different applications and power requirements.</p>
-      </div>
-      <div class="steps">
-        <div class="step"><b>01</b><span>Renewable<br>Energy</span></div>
-        <div class="step-line">→</div>
-        <div class="step"><b>02</b><span>Motor &<br>Compressor</span></div>
-        <div class="step-line">→</div>
-        <div class="step"><b>03</b><span>Compressed Air<br>Storage</span></div>
-        <div class="step-line">→</div>
-        <div class="step"><b>04</b><span>Air Motor &<br>Flywheel</span></div>
-        <div class="step-line">→</div>
-        <div class="step"><b>05</b><span>Generator &<br>Your Power</span></div>
+          <article class="flow-card flow-power">
+            <div class="flow-icon home-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M8 31 32 10l24 21"></path><path d="M14 28v26h36V28M25 54V39h14v15"></path></svg>
+            </div>
+            <h2>To Power</h2>
+            <div class="flow-label">YOUR LIFE • YOUR WORK</div>
+            <ul>
+              <li><span>⌂</span> Your house</li>
+              <li><span>♧</span> Your farm</li>
+              <li><span>⌁</span> Your island</li>
+              <li><span>⛵</span> Your yacht</li>
+              <li><span>⚒</span> Your workshop</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="concept">
-      <div>
-        <p class="eyebrow">DESIGN DIRECTION</p>
-        <h2>A modular off-grid energy platform.</h2>
-        <p>Rambex can be presented as a family of solutions for independent homes, farms, remote communities, islands and marine applications.</p>
-        <a class="text-link" href="#contact">Discuss your project →</a>
+    <!-- BENEFITS: directly follows the dark strip treatment in the concept -->
+    <section class="benefits-wrap" id="solutions">
+      <div class="container">
+        <div class="benefits-bar">
+          <article class="benefit">
+            <div class="benefit-mark">◒</div>
+            <div><h3>100% Renewable</h3><p>Clean energy from sun and sea.</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit-mark">♢</div>
+            <div><h3>Safe &amp; Non-Toxic</h3><p>No chemicals. No fire risk.</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit-mark">⚙</div>
+            <div><h3>Simple &amp; Durable</h3><p>Mechanical systems built to last.</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit-mark">▣</div>
+            <div><h3>Modular &amp; Scalable</h3><p>From small cabins to communities.</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit-mark">◎</div>
+            <div><h3>Off-Grid Freedom</h3><p>Power your life wherever you are.</p></div>
+          </article>
+        </div>
       </div>
-      <img src="assets/rambex-concept.png" alt="Rambex website and system design concept">
     </section>
 
-    <section class="cta" id="contact">
-  <p class="eyebrow">GET IN TOUCH</p>
-  <h2>Power your location with Rambex.</h2>
-  <p>Tell us what you want to power and we can explore the right Rambex system concept.</p>
+    <!-- TECHNOLOGY -->
+    <section class="technology" aria-labelledby="technology-title">
+      <div class="container">
+        <div class="section-title">
+          <p class="kicker">THE RAMBEX SYSTEM</p>
+          <h2 id="technology-title">Simple energy storage.<br><span>Built around mechanics.</span></h2>
+          <p>Rambex combines renewable generation, compressed-air storage and mechanical energy conversion into a modular off-grid platform.</p>
+        </div>
 
-  <form action="https://formspree.io/f/xnpqaqyr" method="POST" class="contact-form">
-
-    <div class="form-row">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <div class="tech-flow">
+          <article class="tech-card">
+            <span class="tech-number">01</span>
+            <div class="tech-symbol">☀</div>
+            <h3>Renewable Input</h3>
+            <p>Solar or other renewable energy supplies the system.</p>
+          </article>
+          <div class="tech-line"></div>
+          <article class="tech-card">
+            <span class="tech-number">02</span>
+            <div class="tech-symbol">⚙</div>
+            <h3>Compression</h3>
+            <p>Electrical energy drives mechanical equipment to compress air.</p>
+          </article>
+          <div class="tech-line"></div>
+          <article class="tech-card featured">
+            <span class="tech-number">03</span>
+            <div class="tech-symbol">◉</div>
+            <h3>Air Storage</h3>
+            <p>Energy is stored mechanically as compressed air for later use.</p>
+          </article>
+          <div class="tech-line"></div>
+          <article class="tech-card">
+            <span class="tech-number">04</span>
+            <div class="tech-symbol">ϟ</div>
+            <h3>Power Output</h3>
+            <p>An air motor, flywheel and generator return useful power.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+    <!-- APPLICATIONS -->
+    <section class="applications" id="applications">
+      <div class="container">
+        <div class="section-title centered">
+          <p class="kicker">APPLICATIONS</p>
+          <h2>Power where the grid<br><span>doesn't reach.</span></h2>
+        </div>
+
+        <div class="application-grid">
+          <article><div class="app-icon">⌂</div><h3>Your House</h3><p>Reliable off-grid energy for everyday living.</p></article>
+          <article><div class="app-icon">♧</div><h3>Your Farm</h3><p>Power pumps, equipment and essential infrastructure.</p></article>
+          <article><div class="app-icon">⌁</div><h3>Your Island</h3><p>Independent energy for remote locations.</p></article>
+          <article><div class="app-icon">⛵</div><h3>Your Yacht</h3><p>Quiet mechanical storage for marine applications.</p></article>
+          <article><div class="app-icon">⚒</div><h3>Your Workshop</h3><p>Scalable power for tools, machinery and workspaces.</p></article>
+          <article class="application-feature"><div class="app-icon">+</div><h3>Your Next Project</h3><p>Build a Rambex configuration around your own power requirements.</p></article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="form-group">
-      <label for="company">Company</label>
-      <input type="text" id="company" name="company">
-    </div>
+    <!-- ABOUT / DESIGN PRINCIPLES -->
+    <section class="architecture" aria-labelledby="architecture-title">
+      <div class="container architecture-grid">
+        <div class="architecture-copy">
+          <p class="kicker">DESIGNED DIFFERENTLY</p>
+          <h2 id="architecture-title">Safe. Mechanical.<br><span>Serviceable.</span></h2>
+          <p>Rambex is designed around straightforward mechanical components rather than chemical energy storage. The architecture can be configured for different locations, capacities and operating requirements.</p>
+          <div class="principle-list">
+            <div><span>01</span><strong>Mechanical storage</strong><em>Compressed air</em></div>
+            <div><span>02</span><strong>Modular architecture</strong><em>Scale the system to the application</em></div>
+            <div><span>03</span><strong>Long-term serviceability</strong><em>Accessible, understandable components</em></div>
+          </div>
+        </div>
+        <div class="architecture-visual" aria-hidden="true">
+          <div class="ring ring-one"></div>
+          <div class="ring ring-two"></div>
+          <div class="ring ring-three"></div>
+          <div class="visual-core">R<br><small>RAMBEX</small></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-    </div>
+    <!-- CONTACT FORM -->
+    <section class="contact contact-form-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="kicker">START WITH YOUR LOCATION</p>
+          <h2>Let's build your<br><span>energy system.</span></h2>
+          <p>Tell us what you want to power, where you want to power it, and the scale you have in mind. We'll get back to you to discuss the right Rambex configuration.</p>
+          <div class="contact-points">
+            <div><span>01</span><strong>Tell us about your project</strong></div>
+            <div><span>02</span><strong>We'll review your requirements</strong></div>
+            <div><span>03</span><strong>We'll discuss the right Rambex solution</strong></div>
+          </div>
+        </div>
 
-    <button class="button primary" type="submit">
-      Send Message <b>→</b>
-    </button>
+        <div class="contact-form-card">
+          <div class="form-heading">
+            <span>RAMBEX ENQUIRY</span>
+            <small>All fields marked * are required</small>
+          </div>
+          <form action="https://formspree.io/f/xnpqaqyr" method="POST" class="contact-form">
+            <input type="hidden" name="subject" value="New Rambex website enquiry">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true">
 
-  </form>
-</section>
-    
+            <div class="form-row">
+              <label>Full name *<input type="text" name="name" autocomplete="name" required></label>
+              <label>Email address *<input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <div class="form-row">
+              <label>Phone number<input type="tel" name="phone" autocomplete="tel"></label>
+              <label>Location / country<input type="text" name="location" autocomplete="country-name"></label>
+            </div>
+            <div class="form-row">
+              <label>What do you want to power?
+                <select name="application">
+                  <option value="">Please select</option>
+                  <option>House</option>
+                  <option>Farm</option>
+                  <option>Island / remote site</option>
+                  <option>Yacht / marine</option>
+                  <option>Workshop / business</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>Approx. system size
+                <select name="system_size">
+                  <option value="">Not sure yet</option>
+                  <option>Up to 15 kWh</option>
+                  <option>15–25 kWh</option>
+                  <option>25–120 kWh</option>
+                  <option>120 kWh+</option>
+                </select>
+              </label>
+            </div>
+            <label>Tell us about your project *<textarea name="message" rows="5" placeholder="Location, energy needs, solar capacity, existing equipment, or anything else that may help..." required></textarea></label>
+            <label class="consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to Rambex using these details to respond to my enquiry.</span></label>
+            <button class="form-submit" type="submit">Send enquiry <span>→</span></button>
+            <p class="form-note">Your enquiry will be sent securely to the Rambex team.</p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <img src="assets/rambex-logo.png" alt="Rambex">
-    <p>© 2026 Rambex Off-Grid Systems. Concept website.</p>
-    <div><a href="#home">Home</a><a href="#microgrid">Technology</a><a href="#contact">Contact</a></div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/rambex-logo.png" alt="Rambex">
+      <p>© 2026 Rambex Off-Grid Systems.</p>
+      <div class="footer-links"><a href="#home">Home</a><a href="#microgrid">Technology</a><a href="#applications">Applications</a><a href="#contact">Contact</a></div>
+    </div>
   </footer>
 
   <script>
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
+
     toggle.addEventListener('click', () => {
       const open = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-expanded', String(open));
     });
-    document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('open'));
+    });
   </script>
 </body>
 </html>

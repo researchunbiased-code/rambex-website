@@ -63,7 +63,7 @@ a{color:inherit}
 .flow-power{border-color:var(--green);color:var(--green)}
 
 .flow-power ul {
-  transform: translateX(20px);
+  transform: translateX(25px);
 }
 
 .flow-icon{width:52px;height:52px;margin-bottom:8px}

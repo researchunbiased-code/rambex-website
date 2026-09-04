@@ -49,11 +49,21 @@ a{color:inherit}
 .flow-grid{display:grid;grid-template-columns:minmax(260px,1fr) 65px minmax(300px,1fr) 65px minmax(260px,1fr);align-items:center}
 .flow-card{width:min(100%,330px);aspect-ratio:1;margin:auto;border:1.5px solid;border-radius:50%;padding:38px 36px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:rgba(255,255,255,.44)}
 .flow-energy{border-color:var(--orange);color:var(--orange)}
+
+.flow-energy ul {
+  transform: translateX(15px);
+}
+
 .flow-micro{border-color:#2f67b0;color:#2f67b0}
+
+.flow-micro ul {
+  transform: translateX(15px);
+}
+
 .flow-power{border-color:var(--green);color:var(--green)}
 
 .flow-power ul {
-  transform: translateX(15px);
+  transform: translateX(20px);
 }
 
 .flow-icon{width:52px;height:52px;margin-bottom:8px}
